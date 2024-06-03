@@ -36,9 +36,9 @@ const Dashboard = () => {
         </div>
         <p>Tokens</p>
         <div className='mt-10 grid grid-cols-2 gap-4'>
-          <TokenCard />
-          <TokenCard />
-          <TokenCard />
+          <TokenCard  propertyId="P_5dba1fb94aa4055b9f296948"  />
+          <TokenCard  propertyId="P_5dba1fb94aa4055b9f2969b1"/>
+          <TokenCard propertyId='P_5dba1fb94aa4055b9f29699f' />
         </div>
       </div>
         <SideHighlight />

@@ -21,8 +21,12 @@ type PropertyDetails = {
     propertyValue: number;
 };
 
+interface TokenCardProps {
+    propertyId: string;
+  }
 
-const Properties = () => {
+
+const Properties: React.FC<TokenCardProps> = async({propertyId}) => {
     const [showAll, setShowAll] = useState(false);
     const [hoveredPropertyIndex, setHoveredPropertyIndex] = useState<number | null>(null);
 
@@ -97,6 +101,7 @@ const Properties = () => {
             propertyValue: 7000,
         }
     ];
+
     // Filter properties based on the showAll state
     const filteredProperties = showAll ? properties : properties.slice(0, 3);
 
