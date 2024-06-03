@@ -26,7 +26,7 @@ interface TokenCardProps {
   }
 
 
-const Properties: React.FC<TokenCardProps> = async({propertyId}) => {
+const Properties = () => {
     const [showAll, setShowAll] = useState(false);
     const [hoveredPropertyIndex, setHoveredPropertyIndex] = useState<number | null>(null);
 

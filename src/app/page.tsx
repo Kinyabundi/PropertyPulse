@@ -16,7 +16,7 @@ export interface AccountType {
   network?: string;
 } 
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
   const { setAccountPData } = useAccount();
   const [accountData, setAccountData] = useState<AccountType>({});
@@ -890,4 +890,4 @@ const page = () => {
   );
 }
 
-export default page
+export default Page
